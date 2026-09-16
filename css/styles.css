@@ -351,3 +351,63 @@ fieldset.form-group input[type="checkbox"] {
 
 
 /* ====== jobs.html CSS ===== */
+/* Box Model inspired by:
+https://www.w3schools.com/css/tryit.asp?filename=trycss_boxmodel
+Accesed: 16 Sep 2026 */
+aside{
+    float: right;
+    width: 25%;
+    background-color: #f4f6f8;
+    border: 2px solid #0b132b;
+    padding: 15px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.job_section {
+    float: left;
+    width: 65%;
+    background-color: lightgrey;
+    border: 8px solid #10b981;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+/* Image and Text side by side adapted from YouTube Tutorial:
+    https://youtu.be/1SCETFZ4s2Q?si=6nWamavZ1hjP25Th
+    Accesed: 14 Sep 2026  */
+.images{
+    float:left;
+    width: 60px;
+}
+
+ul {
+    list-style-type : square;
+}
+
+* { font-family: sans-serif; 
+    color: #0b132b; 
+}
+
+#job_description{
+    text-align: center;
+}
+
+/* text overline inspired by: 
+https://www.w3schools.com/css/tryit.asp?filename=trycss_text-decoration-line
+Accessed: 16 Sep 2026 */
+.centered_heading{
+    text-decoration: overline;
+    text-align: center;
+    font-style: italic;
+}
+
+/* Some parts of this code were generated or adapted using Generative AI (Google Gemini, 2026).
+All AI-generated code and structure was reviewed, tested, and modified by the author before use. */
+footer {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
