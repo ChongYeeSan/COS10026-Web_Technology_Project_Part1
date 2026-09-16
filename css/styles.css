@@ -1,5 +1,5 @@
  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-  h1 {  color:  midnightblue; 
+  h1 {  color:  black; 
      font-size: 2em; 
      font-weight: bold; 
      font-family: 'DM Sans', sans-serif; }
@@ -85,16 +85,17 @@ body{font-family: 'DM Sans', sans-serif;}
 margin-right: 50px;}
 
 .top-banner
-{background-color: midnightblue;
+{background-color: b;
 width: 100%;
 height: 50px;
 margin-bottom: 2px;
 
 }
 
-.content-wrapper{max-width: 960px;
+.content-wrapper{
+max-width: 960px;
 margin:0 auto;
-padding: 0;}
+padding: 0 20px;}
 
 
  p{color:  black; 
@@ -124,12 +125,9 @@ font-size: 20px;
 cursor: pointer;}
 
 .table-section{background-color: gainsboro;
-padding:15 px;
-width: 480px;
-margin-top:10px;
-margin-bottom: 30;
-margin-left:0;
-margin-right:auto}
+width: 100%; 
+margin: 10px 0 30px 0;
+}
 
 .table-section h2{
     font-size: 1.5em;
@@ -210,3 +208,145 @@ text-align: center;}
 .footer-container a:hover{
     text-decoration: underline;
 }
+
+/* ====== Apply.html CSS ====== */
+
+/*  aligning header 1 and 2 to the center*/
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+}
+
+/* using horizontal rule and added height and gave it the color black */
+.thick-line {
+    height: 56px;
+    border: none;
+    background-color: black;
+}
+
+.apply-page main,
+.apply-page .content-wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* adds a curve and spacing inside the container and outside */
+.apply-page form {
+    background-color: gainsboro;
+    border-radius: 20px; 
+    padding: 30px 40px;
+    margin: 30px auto;
+}
+
+/* container is flexible and allows the
+info to be row or column  */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+/* styling of each label text */
+.form-group label {
+    font-weight: bold;
+    margin-bottom: 6px;
+    font-size: 15px;
+    color: black;
+}
+
+/* attributes which are text and non text attributes are styled differently */
+/* textarea has a light gray borderline*/
+/* upon clicking on one of the text bar it will outline black */
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group input[type="number"],
+.form-group input[type="email"],
+.form-group input[type="tel"],
+.form-group select,
+.form-group textarea {
+    padding: 10px 12px;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    font-size: 15px;
+    font-family: 'DM Sans', sans-serif;
+    background-color: white;
+    transition: border-color 0.2s ease;
+}
+
+/* adds curves to the border and padding to gender  */
+fieldset.form-group {
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    padding: 14px 14px;
+    background-color: white;
+}
+
+/* legends are bolded */
+fieldset.form-group legend {
+    font-weight: bold;
+    color: black;
+    padding: 0 6px;
+}
+
+/* label for gender and skill list are slightly bolded */
+fieldset.form-group label {
+    display: inline;
+    font-weight: normal;
+    margin-right: 20px;
+    color: black;
+}
+
+/* navy color to the radio and checkbox */
+fieldset.form-group input[type="radio"],
+fieldset.form-group input[type="checkbox"] {
+    margin-right: 6px;
+    accent-color: navy;
+}
+
+.form-group input[type="submit"],
+.form-group input[type="reset"] {
+    padding: 10px 28px;
+    font-weight: bold;
+    font-family: 'DM Sans', sans-serif;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-right: 12px;
+}
+
+.form-group input[type="submit"] {
+    background-color: mediumseagreen;
+    color: white;
+}
+
+.form-group input[type="submit"]:hover {
+    background-color: seagreen;
+}
+
+.form-group input[type="reset"] {
+    background-color: white;
+    color: midnightblue;
+    border: 1px solid lightgray;
+}
+
+.form-group input[type="reset"]:hover {
+    background-color: aliceblue;
+}
+
+/* ====== About.html CSS ===== */
+
+
+
+
+
+
+
+
+
+
+
+/* ====== jobs.html CSS ===== */

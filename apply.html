@@ -20,7 +20,7 @@
                 <a href="jobs.html">Job Description</a> 
                 <a href="apply.html">Apply</a> 
                 <a href="about.html">About</a> 
-                <a href="apply.html" class="btn-green">Apply Now!</a>
+                <a href="apply.html#application-form" class="btn-green">Apply Now!</a>
             </nav>
         </div>
     </header>
@@ -29,8 +29,7 @@
     <h2>Start Your Career in Sustainable Energy</h2>
 
     <br>
-    <!-- <p>Please fill in the form to apply for a position with our company.</p> -->
-    <form class="form-group" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
+    <form id="application-form" class="form-group" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
         <div class="form-group">
             <label for="jrefer">Job reference number:</label>
             <input type="text" id="jrefer" name="jrefer" required></div>
@@ -53,9 +52,9 @@
 
         <fieldset class="form-group">
             <legend>Gender:</legend>
-            <input type="radio" id="male" name="male" value="Male" required>
+            <input type="radio" id="male" name="gender" value="Male" required>
             <label for="male">Male</label>
-            <input type="radio" id="female" name="female" value="Female">
+            <input type="radio" id="female" name="gender" value="Female">
             <label for="female">Female</label>
         </fieldset>
 
@@ -97,7 +96,7 @@
         <br>
         <div class="form-group">
             <label for="pnum">Phone Number:</label>
-            <input type="number" id="pnum" name="pnum" pattern="[0-9]{10}" placeholder="e.g. 0113456876">
+            <input type="text" id="pnum" name="pnum" pattern="[0-9]{10}" placeholder="e.g. 0113456876">
         </div>
         <br>
         <fieldset class="form-group">
@@ -125,8 +124,19 @@
             <input type="submit" value="Submit"><br>
             <input type="reset" value="Reset Form">
         </div>
-    </form>
+    </form> 
 
-    
+    <footer class="site-footer">
+
+            <div class="footer-container">
+
+                <p>&copy; 2026 Ecopower. All rights reserved.</p>
+                <p>
+                    <a href="https://cos10026group3.atlassian.net/?continue=https%3A%2F%2Fcos10026group3.atlassian.net%2Fwelcome%2Fsoftware%3FprojectId%3D10001&atlOrigin=eyJpIjoiNDBjY2NlNmNjNzU5NDVhNThkYjQ0NmMwNGE3OTFmZjAiLCJwIjoiamlyYS1zb2Z0d2FyZSJ9" target="_blank">Jira Board</a> |
+                    <a href="https://github.com/ChongYeeSan/COS10026-Web_Technology_Project_Part1.git" target="_blank">Github Repository</a> |
+                    <a href="mailto:info@ecopower.com">info@ecopower.com</a>
+                </p>
+            </div>
+        </footer>
 </body>
 </html>
