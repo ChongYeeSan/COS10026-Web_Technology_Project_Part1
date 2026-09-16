@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Apply</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="css/styles.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 </head>
 <body class="apply-page">
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="jobs.html">Job</a></li>
-            <li><a href="apply.html">Apply</a></li>
-            <li><a href="about.html">About</a></li>
-        </ul>
-    </nav>
+    <header class="site-header">
+        <div class="header-container navbar">
+            <div class="brand-group">
+                <img src="images/logo.png" alt="Ecopower Logo" class="logo-img">
+                <h1 class="brand-title"> Ecopower</h1>
+            </div>
 
-    <div class="container">
-    <img src="images/logo.jpeg" alt="Ecopower-logo" style="width:80px;height:50px;" class="logo">
-    <span class="text">Ecopower</span>
-    </div>
+            <nav aria-label="Main Navigation" class="nav-links-group">
+                <a href="index.html">Home</a>
+                <a href="jobs.html">Job Description</a> 
+                <a href="apply.html">Apply</a> 
+                <a href="about.html">About</a> 
+                <a href="apply.html" class="btn-green">Apply Now!</a>
+            </nav>
+        </div>
+    </header>
     <hr class="thick-line">
     <h1>Submit Your Application</h1>
     <h2>Start Your Career in Sustainable Energy</h2>
@@ -30,40 +33,45 @@
     <form class="form-group" action="https://mercury.swin.edu.au/it000000/formtest.php" method="post">
         <div class="form-group">
             <label for="jrefer">Job reference number:</label>
-            <input type="int" id="jrefer" name="jrefer" required></div>
+            <input type="text" id="jrefer" name="jrefer" required></div>
         <br>
         <div class="form-group">
             <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" [pattern="[A-Za-z ]+" required></div>
+            <input type="text" id="fname" name="fname" pattern="[A-Za-z ]+" required>
+        </div>
         <br>
         <div class="form-group">
             <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname" [pattern="[A-Za-z ]+" required></div>
+            <input type="text" id="lname" name="lname" pattern="[A-Za-z ]+" required>
+        </div>
         <br>
         <div class="form-group">
             <label for="dob">Date of Birth:</label>
-            <input type="date" id="dob" name="dob" required></div>
+            <input type="date" id="dob" name="dob" required>
+        </div>
         <br>
 
         <fieldset class="form-group">
-            <label for="gender">Gender:</label required>
-            <input type="radio" id="gender" name="gender" value="Male">
-            <label for="gender">Male</label>
-            <input type="radio" id="gender" name="gender" value="Female">
-            <label for="gender">Female</label>
+            <legend>Gender:</legend>
+            <input type="radio" id="male" name="male" value="Male" required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="female" value="Female">
+            <label for="female">Female</label>
         </fieldset>
 
         <br>
         <div class="form-group">
             <label for="address">Street Address:</label>
-            <input type="text" id="address" name="address" required></div>
+            <input type="text" id="address" name="address" required>
+        </div>
         <br>
         <div class="form-group">
             <label for="suburb-town">Suburb/Town:</label>
-            <input type="text" id="suburb-town" name="suburb-town" required></div>
+            <input type="text" id="suburb-town" name="suburb-town" required>
+        </div>
         <br>
         <div class="form-group">
-            <label for="state">State:</label required>
+            <label for="state">State:</label>
             <select name="states" id="state">
                 <option value="victora">VIC</option>
                 <option value="nsw">NSW</option>
@@ -79,37 +87,40 @@
         <br>
         <div class="form-group">
             <label for="pcode">Postcode:</label>
-            <input type="int" id="pcode" name="pcode" pattern= "[0-9]{4}" required></div>
+            <input type="number" id="pcode" name="pcode" pattern= "[0-9]{4}" required>
+        </div>
         <br>
         <div class="form-group">
             <label for="Email">Email Address:</label>
-            <input type="email" id="Email" name="Email" required [pattern="[A-Za-z ]">
+            <input type="email" id="Email" name="Email" required>
+        </div>
         <br>
         <div class="form-group">
-            <label for="pnum">Phone Number:</label required>
-            <input type="int" id="pnum" name="pnum">
+            <label for="pnum">Phone Number:</label>
+            <input type="number" id="pnum" name="pnum" pattern="[0-9]{10}" placeholder="e.g. 0113456876">
+        </div>
         <br>
         <fieldset class="form-group">
-            <legend>Skill list:</legend required>
-            <input type="checkbox" id="skill-list1" name="skill-list1" value="programming">
-            <label for="skills">Programming</label>
-            <input type="checkbox" id="skill-list1" name="skill-list1" value="programming">
-            <label for="skills">Data Entry</label>
-            <input type="checkbox" id="skill-list1" name="skill-list1" value="programming">
-            <label for="skills">Data Analytics</label>
-            <input type="checkbox" id="skill-list1" name="skill-list1" value="programming">
-            <label for="skills">Communication</label>
-            <input type="checkbox" id="skill-list1" name="skill-list1" value="programming">
-            <label for="skills">Teamwork</label>
-            <input type="checkbox" id="skill-list1" name="skill-list1" value="programming">
-            <label for="skills">Time Management</label>
+            <legend>Skill list:</legend>
+            <input type="checkbox" id="skills1" name="skills1" value="programming">
+            <label for="skills1">Programming</label>
+            <input type="checkbox" id="skills2" name="skills2" value="data-entry">
+            <label for="skills2">Data Entry</label>
+            <input type="checkbox" id="skills3" name="skills3" value="data-analytics">
+            <label for="skills3">Data Analytics</label>
+            <input type="checkbox" id="skills4" name="skills4" value="communication">
+            <label for="skills4">Communication</label>
+            <input type="checkbox" id="skills5" name="skills5" value="teamwork">
+            <label for="skills5">Teamwork</label>
+            <input type="checkbox" id="skills6" name="skills6" value="time-management">
+            <label for="skills6">Time Management</label>
         </fieldset>
         <br>
         <div class="form-group">
             <label for="others">Other skills:</label>
             <textarea id="others" name="others" rows="2"></textarea><br><br>
         </div>
-
+        <br>
         <div class="form-group">
             <input type="submit" value="Submit"><br>
             <input type="reset" value="Reset Form">
