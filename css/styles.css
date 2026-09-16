@@ -240,6 +240,7 @@ h2 {
     border-radius: 20px; 
     padding: 30px 40px;
     margin: 30px auto;
+    max-width: 700px;
 }
 
 /* container is flexible and allows the
