@@ -212,11 +212,8 @@ text-align: center;}
 /* ====== Apply.html CSS ====== */
 
 /*  aligning header 1 and 2 to the center*/
-h1 {
-    text-align: center;
-}
 
-h2 {
+h2, h3{
     text-align: center;
 }
 
