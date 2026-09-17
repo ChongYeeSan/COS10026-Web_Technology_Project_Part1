@@ -19,7 +19,7 @@
     <h1 class="brand-title"> Ecopower</h1>
     </div>
 
-     <nav label="Main Navigation" class="nav-links-group">
+     <nav  class="nav-links-group">
        <a href="index.html">Home</a>
       <a href="jobs.html">Job Description</a> 
       <a href="apply.html">Apply</a> 
@@ -35,7 +35,7 @@
  
 
   <main class="content-wrapper fluid">
-     <div class="top-banner"></div>
+     
     <section class="hero-banner">
       <h2><em>"Powering a Cleaner Tomorrow through smart technology"</em></h2>
       <p>About Company: Ecopower is such a great company. I am so proud to work here.</p>
@@ -50,13 +50,8 @@
   
   <p>Search projects and roles :</p>
     <form action="jobs.html" method ="get" class="search-box">
-    <input type="text" name="query" list="job-roles" placeholder="Search" label="Search projects and roles">
-     
-    <datalist id="job-roles">
-      <option value="Solar Engineer">
-<option value="Sustainability coordinator">
-  
-        </datalist>
+    <label for="search-input" class="visually-hidden">Search projects and roles</label>
+    <input type="text" id="search-input" name="query" list="job-roles" placeholder="Search" >
         <button type="submit" class="hero-btn">Search</button>
 
    </form>
