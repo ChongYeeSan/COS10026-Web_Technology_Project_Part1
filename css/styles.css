@@ -352,3 +352,71 @@ fieldset.form-group input[type="checkbox"] {
 
 /* ====== jobs.html CSS ===== */
 
+aside{
+    float: right;
+    width: 25%;
+    background-color: gainsboro;
+    border: 2px solid midnightblue;
+    padding: 15px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+.job_section {
+    float: left;
+    width: 65%;
+    background-color: gainsboro;
+    border: 8px solid mediumseagreen;
+    padding: 20px;
+    margin: 20px;
+    box-sizing: border-box;
+}
+
+
+.images{
+    float:left;
+    width: 60px;
+}
+
+ul {
+    list-style-type : square;
+}
+
+ p { 
+    color: black; 
+}
+
+#job_description{
+    text-align: center;
+}
+
+.heading {
+    text-decoration: underline;
+}
+
+#special {
+    text-align:left;
+}
+
+.centered_heading{
+    text-decoration: overline;
+    text-align: center;
+    font-style: italic;
+}
+
+
+footer {
+    clear: both;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+}
+
+.ack_box {
+    margin: 0;
+    font-size:18px;
+    font-weight:bold;
+    color: black;
+    text-align:left;
+}
+
