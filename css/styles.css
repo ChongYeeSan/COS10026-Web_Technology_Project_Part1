@@ -104,7 +104,7 @@ margin-right: 50px;}
 
 
 .content-wrapper{
-max-width: 960px;
+max-width: 100%;
 margin:0 auto;
 padding: 0 20px;}
 
@@ -138,14 +138,14 @@ padding: 0 20px;}
     padding: 25px 0;
 }
 
-.search-section p{font-size: 22px;
+.search-section p{font-size: 30px;
 font-style: italic;
 font-weight: bold;
 margin: 0;}
 
 .search-box input{border:inline-block ;
 outline: none;
-background: transparent;
+background: white;
 font-size: 20px;
 cursor: pointer;}
 
@@ -201,10 +201,12 @@ font-weight: bold;
 color: black;}
 
 .site-footer{background-color: midnightblue;
-    max-width:960px;
-    padding:25px 0;
+    width: 100%;
+    max-width:100%;
+    padding:25px 20px;
     margin: 25px auto 0 auto;
-    padding:20px 0;}
+    padding:20px 0;
+    text-align: center;}
 
 .fluid {
     width: 100%;
