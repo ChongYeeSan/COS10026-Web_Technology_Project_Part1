@@ -636,19 +636,18 @@ aside{
     width: 25%;
     background-color: gainsboro;
     border: 2px solid midnightblue;
-    padding: 15px;
-    margin: 20px;
     box-sizing: border-box;
+    box-shadow: 10px 10px 5px gray;
 }
 
 .job_section {
     float: left;
-    width: 65%;
+    width: 60%;
     background-color: gainsboro;
     border: 8px solid mediumseagreen;
-    padding: 20px;
-    margin: 20px;
     box-sizing: border-box;
+    box-shadow: 10px 10px 5px gray;
+    margin-bottom: 30px;
 }
 
 ul {
@@ -665,6 +664,7 @@ ul {
 
 .heading {
     text-decoration: underline;
+    text-align: left;
 }
 
 .centered_heading{
@@ -673,12 +673,15 @@ ul {
     font-style: italic;
 }
 
-
-footer {
-    clear: both;
-    width: 100%;
-    text-align: center;
-    padding: 20px;
+.ack{
+     background-color: gainsboro;
+    border-left: 14px solid mediumseagreen;
+    padding:12px 20px;
+    width:100%;
+    margin-top: 25px;
+    margin-bottom:40px;
+    clear:both;
 }
+
 
 
