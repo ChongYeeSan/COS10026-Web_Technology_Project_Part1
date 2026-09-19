@@ -372,12 +372,6 @@ aside{
     box-sizing: border-box;
 }
 
-
-.images{
-    float:left;
-    width: 60px;
-}
-
 ul {
     list-style-type : square;
 }
@@ -394,10 +388,6 @@ ul {
     text-decoration: underline;
 }
 
-#special {
-    text-align:left;
-}
-
 .centered_heading{
     text-decoration: overline;
     text-align: center;
@@ -412,11 +402,4 @@ footer {
     padding: 20px;
 }
 
-.ack_box {
-    margin: 0;
-    font-size:18px;
-    font-weight:bold;
-    color: black;
-    text-align:left;
-}
 
