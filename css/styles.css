@@ -24,12 +24,12 @@ nav a { color: black;
     object-fit: contain;}
 
 
-
 .navbar{ display: flex;
         align-items:center;
         max-width: 960px;
         margin:0 auto;
-  }
+       }
+  
 
 .nav-links-group{
     display:flex;
@@ -39,25 +39,27 @@ nav a { color: black;
     flex: 1;
     justify-content: space-between;}
 
-body{background-image: url('../images/ecopower-image.png');
+body{margin: 0;
+    background-image: url('../images/eco-green.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 background-attachment: fixed;
+font-family: 'DM Sans', sans-serif;
     }
 
 .hero-banner {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: gainsboro;
+    
     padding: 20px 0;
     text-align: center;
     width: 100%;
     margin:0 ;
     border-radius: 4px;
     margin-top: 0px;
-    border: 3px solid midnightblue;
+  
  }
 
 .hero-banner h2 {
@@ -88,9 +90,6 @@ background-attachment: fixed;
 
 body{font-family: 'DM Sans', sans-serif;}
 
-
-
-
 .btn-green
    {background-color: mediumseagreen;
     color:white;
@@ -101,12 +100,6 @@ body{font-family: 'DM Sans', sans-serif;}
     text-decoration: none;
 margin-right: 50px;}
 
-
-
-.content-wrapper{
-max-width: 100%;
-margin:0 auto;
-padding: 0 20px;}
 
 
  p{color:  black;
@@ -138,10 +131,11 @@ padding: 0 20px;}
     padding: 25px 0;
 }
 
-.search-section p{font-size: 30px;
+.search-section p{font-size: 20px;
 font-style: italic;
 font-weight: bold;
-margin: 0;}
+margin: 0;
+position:left;}
 
 .search-box input{border:inline-block ;
 outline: none;
@@ -150,15 +144,34 @@ font-size: 20px;
 cursor: pointer;}
 
 .table-section{background-color: gainsboro;
-width: 100%;
-margin: 10px 0 30px 0;
+
+max-width: 40%;
+margin: 20px auto;
+border-radius: 4px;
+border: 1px solid midnightblue;
+
 }
 
 
-.table-container{overflow-x:auto ;
-border-radius:0px;
-border:1px solid lightgray;
-align-items: left;}
+
+.search-table-row{display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+width: 100%;
+margin:20px 0;
+padding: 0 20px;}
+
+.search-table-row .search-section
+{flex: 1;
+    max-width: 400px;
+margin:0;}
+
+.search-table-row .table-section{flex: 2;   
+    margin:0;}
+
+
 
 .data-table{width:100%;
 border-collapse:collapse;
@@ -191,7 +204,7 @@ transition:background-color 0.2s ease;}
     background-color: gainsboro;
     border-left: 14px solid mediumseagreen;
     padding:12px 20px;
-    width:100%;
+    width: 100%;
     margin-top: 25px;
     margin-bottom:40px;
 }
