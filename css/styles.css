@@ -5,6 +5,7 @@
      font-weight: bold;
      font-family: 'DM Sans', sans-serif; }
 
+    
 *{
     box-sizing: border-box;
 }
@@ -38,18 +39,12 @@ nav a { color: black;
     flex: 1;
     justify-content: space-between;}
 
-
-.top-banner-img {
-    width:100%;
-    max-width:100%;
-    height: 260px;
-    object-fit: cover;
-    object-position: center;
-    margin: 0 auto;
-    display: block;
-    border-radius: 4px 4px 0 0;
-    border-bottom:none;
-}
+body{background-image: url('../images/ecopower-image.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+background-attachment: fixed;
+    }
 
 .hero-banner {
     display: flex;
