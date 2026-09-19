@@ -51,12 +51,16 @@
         </div>
         <br>
 
-        <fieldset class="form-group">
+        <fieldset class="gender-fieldset">
             <legend>Gender:</legend>
-            <input type="radio" id="male" name="gender" value="Male" required>
-            <label for="male">Male</label>
-            <input type="radio" id="female" name="gender" value="Female">
-            <label for="female">Female</label>
+            <div class="skill-item">
+                <input type="radio" id="male" name="gender" value="Male" required>
+                <label for="male">Male</label>
+            </div>
+            <div class="skill-item">
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label>
+            </div>
         </fieldset>
 
         <br>
@@ -87,7 +91,7 @@
         <br>
         <div class="form-group">
             <label for="pcode">Postcode:</label>
-            <input type="text" id="pcode" name="pcode" pattern= "[0-9]{4}" required>
+            <input type="text" id="pcode" name="pcode" pattern= "[0-9]{5}" required>
         </div>
         <br>
         <div class="form-group">
@@ -100,20 +104,32 @@
             <input type="text" id="pnum" name="pnum" pattern="[0-9]{8,12}" placeholder="e.g. 0113456876" required>
         </div>
         <br>
-        <fieldset class="form-group">
+        <fieldset class="form-group skills-fieldset">
             <legend>Skill list:</legend>
-            <input type="checkbox" id="skills1" name="skills1" value="programming">
-            <label for="skills1">Programming</label>
-            <input type="checkbox" id="skills2" name="skills2" value="data-entry">
-            <label for="skills2">Data Entry</label>
-            <input type="checkbox" id="skills3" name="skills3" value="data-analytics">
-            <label for="skills3">Data Analytics</label>
-            <input type="checkbox" id="skills4" name="skills4" value="communication">
-            <label for="skills4">Communication</label>
-            <input type="checkbox" id="skills5" name="skills5" value="teamwork">
-            <label for="skills5">Teamwork</label>
-            <input type="checkbox" id="skills6" name="skills6" value="time-management">
-            <label for="skills6">Time Management</label>
+            <div class="skill-item">
+                <input type="checkbox" id="skills1" name="skills1" value="programming">
+                <label for="skills1">Programming</label>
+            </div>
+            <div class="skill-item">
+                <input type="checkbox" id="skills2" name="skills2" value="data-entry">
+                <label for="skills2">Data Entry</label>
+            </div>
+            <div class="skill-item">
+                <input type="checkbox" id="skills3" name="skills3" value="data-analytics">
+                <label for="skills3">Data Analytics</label>
+            </div>
+            <div class="skill-item">
+                <input type="checkbox" id="skills4" name="skills4" value="communication">
+                <label for="skills4">Communication</label>
+            </div>
+            <div class="skill-item">
+                <input type="checkbox" id="skills5" name="skills5" value="teamwork">
+                <label for="skills5">Teamwork</label>
+            </div>
+            <div class="skill-item">
+                <input type="checkbox" id="skills6" name="skills6" value="time-management">
+                <label for="skills6">Time Management</label>
+            </div>
         </fieldset>
         <br>
         <div class="form-group">
@@ -135,7 +151,7 @@
                 <p>
                     <a href="https://cos10026group3.atlassian.net/?continue=https%3A%2F%2Fcos10026group3.atlassian.net%2Fwelcome%2Fsoftware%3FprojectId%3D10001&atlOrigin=eyJpIjoiNDBjY2NlNmNjNzU5NDVhNThkYjQ0NmMwNGE3OTFmZjAiLCJwIjoiamlyYS1zb2Z0d2FyZSJ9" target="_blank">Jira Board</a> |
                     <a href="https://github.com/ChongYeeSan/COS10026-Web_Technology_Project_Part1.git" target="_blank">Github Repository</a> |
-                    <a href="mailto:info@ecopower.com">info@ecopower.com</a>
+                    <a href="mailto:joshua@ecopower.com">joshua@ecopower.com</a>
                 </p>
             </div>
         </footer>
