@@ -1,21 +1,41 @@
 
+ /*1 google font*/
  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
-  h1 {  color:  black;
+ 
+  /*2base styles*/
+ body{margin: 0;
+    min-height: 100vh;
+    background-image: url('../images/eco-green.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'DM Sans', sans-serif;}
+
+ h1 {  color:  black;
      font-size: 2em;
      font-weight: bold;
      font-family: 'DM Sans', sans-serif; }
 
+ .fluid{width: 100%;}
 
-nav a { color: black;
-    font-weight:bold;
-    text-decoration: none;}
+ /*3 header and navigation*/
 
+ .site-header {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 0;}
+
+.brand-group{display:flex;
+    align-items: center;}
 
 .logo-img{width: 90px;
     height: 90px;
     object-fit: contain;}
 
-
+nav a { color: black;
+    font-weight:bold;
+    text-decoration: none;}
 
 .nav-links-group{
     display:flex;
@@ -25,15 +45,7 @@ nav a { color: black;
     flex: 1;
     justify-content: space-between;}
 
-body{margin: 0;
-    min-height: 100vh;
-    background-image: url('../images/eco-green.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    font-family: 'DM Sans', sans-serif;
-    }
+ /*4 hero banner & buttons*/
 
 .hero-banner {
     display: flex;
@@ -42,18 +54,19 @@ body{margin: 0;
     padding: 20px 0;
     text-align: center;
     width: 100%;
-    margin: 0;
-    border-radius: 4px;
-    margin-top: 20px;
-    margin-bottom: 20px;
- }
+    margin:20px 0;
+    border-radius: 4px;}
 
 .hero-banner h2 {
     font-size: 2em;
     font-weight: bold;
     font-style: italic;
-    color: midnightblue;
-    }
+    color: midnightblue;}
+
+.hero-banner p{font-size: 25px;
+    font-style: italic;
+    font-weight: bold;
+    color: midnightblue;}
 
 
 .hero-btn-grp{
@@ -69,10 +82,6 @@ body{margin: 0;
         font-weight: bold;
         text-decoration: none;}
 
-.brand-group{display:flex;
-    align-items: center;
-    }
-
 .btn-green
    {background-color: mediumseagreen;
     color:white;
@@ -83,48 +92,7 @@ body{margin: 0;
     text-decoration: none;
 margin-right: 50px;}
 
-.hero-banner p{font-size: 25px;
-    font-style: italic;
-    font-weight: bold;
-    color: midnightblue;
-    }
-
-.visually-hidden{position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;}
-
-.search-section{
-    display :flex;
-    justify-content: center;
-    gap: 15px;
-    align-items:center;
-   padding:25px 0;
-
-}
-
-.search-section h3{font-size: 20px;
-font-weight: bold;
-margin: 0;
-color:midnightblue
-}
-
-.search-box{display:flex;
-    align-items: center;
-    gap: 10px;
-    }
-
-.search-box input{display:inline-block;
-outline: none;
-background: white;
-font-size: 20px;
-font-family: 'DM Sans', sans-serif;
-cursor: pointer;}
+ /*5 search section and table*/
 
 .search-table-row{display:flex;
     flex-direction: row;
@@ -137,10 +105,31 @@ cursor: pointer;}
 
 .search-table-row .search-section
 {flex: 1;
-    max-width: 400px;
+max-width: 400px;
 margin:0;}
 
+.search-section{
+    display :flex;
+    justify-content: center;
+    gap: 15px;
+    align-items:center;
+   padding:25px 0;}
 
+.search-section h3{font-size: 20px;
+font-weight: bold;
+margin: 0;
+color:midnightblue;}
+
+.search-box{display:flex;
+    align-items: center;
+    gap: 10px;}
+
+.search-box input{display:inline-block;
+outline: none;
+background: white;
+font-size: 20px;
+font-family: 'DM Sans', sans-serif;
+cursor: pointer;}
 
 .data-table{width:420px;
 border-collapse:collapse;
@@ -163,15 +152,19 @@ font-size: 15px;   }
     border: 1px solid black;
     padding: 8px 10px;
     font-size: 15px;
-color: black;
-width:30%}
+    color: black;
+    width:30%}
 
 .data-table tbody tr{border-bottom:1px solid lightgray;
-transition:background-color 0.2s ease;}
+                    transition:background-color 0.2s ease;}
 
-.data-table tbody tr:nth-of-type(even){background-color:aliceblue;}
+.data-table tbody tr:nth-of-type(even){
+    background-color:aliceblue;}
 
-.data-table tbody tr:hover{background-color:aliceblue;}
+.data-table tbody tr:hover{
+    background-color:aliceblue;}
+
+/*6 acknowledgment box & footer*/
 
 .ack-box {
     background-color: gainsboro;
@@ -179,8 +172,8 @@ transition:background-color 0.2s ease;}
     padding:12px 20px;
     width: 100%;
     margin-top: 25px;
-    margin-bottom: 20px;
-}
+    margin-bottom: 20px;}
+
 .ack-box p{margin: 0;
 font-size: 18px;
 font-weight: bold;
@@ -190,22 +183,10 @@ font-family: 'DM Sans', sans-serif;}
 
 .site-footer{background-color: midnightblue;
     width: 100%;
-    max-width:100%;
     margin-top:10px;
     padding:20px 0;
     text-align: center;
-    margin-bottom: 0px;
-  }
-
-.fluid {
-    width: 100%;
-}
-
-.site-header {
-    background-color: white;
-    border-bottom: 1px solid #ddd;
-    padding: 12px 0;
-}
+    margin-bottom: 0px;}
 
 .footer-container{max-width: 960px;
 margin: 0 auto ;
@@ -216,19 +197,53 @@ text-align: center;}
    font-size: 15px;
    font-style:normal ;
    font-weight: normal ;
-   margin: 6px 0;
-}
+   margin: 6px 0;}
 
 .footer-container a{color: mediumseagreen ;
     text-decoration: none;
     font-style: normal ;
-    font-weight: normal ;
-  
-}
+    font-weight: normal ;}
 
 .footer-container a:hover{
-    text-decoration: underline;
-}
+    text-decoration: underline;}
+
+/*7 Accessibility & utilities*/
+
+.visually-hidden{position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;}
+
+a:focus, button:focus, input:focus{
+    outline: 3px solid mediumseagreen;
+    outline-offset: 2px;}
+
+/*8 Responsive media queries*/
+
+@media screen and (max-width: 500px){
+.nav-links-group{
+    flex-direction:column;
+    gap:15px;
+    margin-left: 0;}
+
+.header-container{flex-direction:column;
+                  text-align: center;}
+                
+.hero-btn-grp{flex-direction: column;
+              gap: 20px;}
+            
+.search-table-row{
+    flex-direction: column;
+    gap: 30px;
+    padding: 0 10px;}
+
+.data-table{width: 100%;
+            margin-top: 20px;}}
 
 /* ====== Apply.html CSS ====== */
 
