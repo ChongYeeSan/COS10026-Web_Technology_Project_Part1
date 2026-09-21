@@ -50,7 +50,6 @@ nav a { color: black;
     flex: 1;
     justify-content: space-between;}
 
-
 .btn-green
    {background-color: green;
     color:white;
@@ -60,7 +59,6 @@ nav a { color: black;
     display:inline-block;
     text-decoration: none;
 margin-right: 50px;}
-
 
  /*4 hero banner & buttons*/
 
@@ -84,7 +82,6 @@ margin-right: 50px;}
     font-style: italic;
     font-weight: bold;
     color: midnightblue;}
-
 
 .hero-btn-grp{
     display: flex;
@@ -145,7 +142,6 @@ background-color:white;
 font-size: 16px;
 margin-top: 60px;
 margin-bottom: 50px;}
-
 
 .data-table th{background-color: midnightblue ;
 color:white;
