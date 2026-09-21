@@ -251,15 +251,8 @@ a:focus, button:focus, input:focus{
 
 /*  aligning header 1 and 2 to the center*/
 
-h2, h3{
+h2 {
     text-align: center;
-}
-
-/* using horizontal rule and added height and gave it the color black */
-.thick-line {
-    height: 56px;
-    border: none;
-    background-color: black;
 }
 
 .apply-page main,
@@ -303,7 +296,9 @@ info to be row or column  */
 .form-group input[type="email"],
 .form-group input[type="tel"],
 .form-group select,
-.form-group textarea {
+/* textarea dont have a default green because it doesnt support pattern
+attribute and only pattern validated feild get the green outline */
+.form-group textarea:focus {
     padding: 10px 12px;
     border: 1px solid lightgray;
     border-radius: 6px;
@@ -640,6 +635,7 @@ footer{
 
 /* ====== jobs.html CSS ===== */
 
+/* this is the sidebox with recquirement 25% width */
 aside{
     float: right;
     width: 25%;
@@ -649,6 +645,7 @@ aside{
     box-shadow: 10px 10px 5px gray;
 }
 
+/* This is job section box styling */
 .job_section {
     float: left;
     width: 60%;
@@ -659,18 +656,21 @@ aside{
     margin-bottom: 30px;
 }
 
+/* This is to style the unorder list into square shape */
 ul {
     list-style-type : square;
 }
-
+/* This is to change the word colour of all paragraphs into black color */
  p {
     color: black;
 }
 
+/* The word job description to be in center  */
 #job_description{
     text-align: center;
 }
 
+/* This is to underline and situated on left side to all the heading word in job section and aside */
 .heading {
     text-decoration: underline;
     text-align: left;
@@ -682,6 +682,7 @@ ul {
     font-style: italic;
 }
 
+/* This is to clear the float box so that acknowledge part can situated at bottom */
 .ack{
      background-color: gainsboro;
     border-left: 14px solid mediumseagreen;
