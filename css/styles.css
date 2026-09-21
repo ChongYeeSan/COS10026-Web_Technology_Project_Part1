@@ -76,14 +76,14 @@ nav a { color: black;
     margin-top: 40px;}
 
 .hero-btn{
-        background-color: mediumseagreen;
+        background-color: green;
          color:white;
         padding:10px 24px;
         font-weight: bold;
         text-decoration: none;}
 
 .btn-green
-   {background-color: mediumseagreen;
+   {background-color: green;
     color:white;
     padding: 10px 24px;
     font-weight:bold;
@@ -142,7 +142,7 @@ margin-bottom: 50px;}
 .data-table thead tr{background-color:midnightblue;
 color:white}
 
-.data-table th{background-color: midnightblue !important;
+.data-table th{background-color: midnightblue ;
 color:white;
 border:1px solid black;
 padding: 8px 10px;
