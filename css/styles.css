@@ -249,15 +249,8 @@ a:focus, button:focus, input:focus{
 
 /*  aligning header 1 and 2 to the center*/
 
-h2, h3{
+h2 {
     text-align: center;
-}
-
-/* using horizontal rule and added height and gave it the color black */
-.thick-line {
-    height: 56px;
-    border: none;
-    background-color: black;
 }
 
 .apply-page main,
