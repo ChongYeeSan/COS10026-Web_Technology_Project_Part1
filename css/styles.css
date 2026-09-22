@@ -285,9 +285,6 @@ info to be row or column  */
     color: black;
 }
 
-/* attributes which are text and non text attributes are styled differently */
-/* textarea has a light gray borderline*/
-/* upon clicking on one of the text bar it will outline black */
 .form-group input[type="text"],
 .form-group input[type="date"],
 .form-group input[type="number"],
@@ -296,10 +293,10 @@ info to be row or column  */
 .form-group select,
 /* textarea dont have a default green because it doesnt support pattern
 attribute and only pattern validated feild get the green outline */
-.form-group textarea:focus {
+.form-group textarea {
     padding: 10px 12px;
     border: 1px solid lightgray;
-    border-radius: 6px;
+    border-radius: 10px;
     font-size: 15px;
     font-family: 'DM Sans', sans-serif;
     background-color: white;
