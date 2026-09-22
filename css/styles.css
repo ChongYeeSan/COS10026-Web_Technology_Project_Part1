@@ -23,7 +23,7 @@
 
  .site-header {
     background-color: white;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid lightgrey;
     padding: 12px 0;}
 
 .brand-group{display:flex;
@@ -36,6 +36,11 @@
 nav a { color: black;
     font-weight:bold;
     text-decoration: none;}
+ .header-container{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+ }
 
 .nav-links-group{
     display:flex;
@@ -44,6 +49,16 @@ nav a { color: black;
     margin-left: 40px;
     flex: 1;
     justify-content: space-between;}
+
+.btn-green
+   {background-color: green;
+    color:white;
+    padding: 10px 24px;
+    font-weight:bold;
+    border-radius: 8px;
+    display:inline-block;
+    text-decoration: none;
+margin-right: 50px;}
 
  /*4 hero banner & buttons*/
 
@@ -68,7 +83,6 @@ nav a { color: black;
     font-weight: bold;
     color: midnightblue;}
 
-
 .hero-btn-grp{
     display: flex;
         justify-content:center;
@@ -81,16 +95,6 @@ nav a { color: black;
         padding:10px 24px;
         font-weight: bold;
         text-decoration: none;}
-
-.btn-green
-   {background-color: green;
-    color:white;
-    padding: 10px 24px;
-    font-weight:bold;
-    border-radius: 8px;
-    display:inline-block;
-    text-decoration: none;
-margin-right: 50px;}
 
  /*5 search section and table*/
 
@@ -139,9 +143,6 @@ font-size: 16px;
 margin-top: 60px;
 margin-bottom: 50px;}
 
-.data-table thead tr{background-color:midnightblue;
-color:white}
-
 .data-table th{background-color: midnightblue ;
 color:white;
 border:1px solid black;
@@ -157,9 +158,6 @@ font-size: 15px;   }
 
 .data-table tbody tr{border-bottom:1px solid lightgray;
                     transition:background-color 0.2s ease;}
-
-.data-table tbody tr:nth-of-type(even){
-    background-color:aliceblue;}
 
 .data-table tbody tr:hover{
     background-color:aliceblue;}
