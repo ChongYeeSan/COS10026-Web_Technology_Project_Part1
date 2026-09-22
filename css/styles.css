@@ -290,7 +290,7 @@ info to be row or column  */
 .form-group input[type="tel"],
 .form-group select,
 /* textarea dont have a default green because it doesnt support pattern
-attribute and only pattern validated feild get the green outline */
+attribute and only pattern validated fields get the green outline */
 .form-group textarea {
     padding: 10px 12px;
     border: 1px solid lightgray;
